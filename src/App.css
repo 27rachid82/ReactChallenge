@@ -23,8 +23,12 @@
 
 .bordure {
   border-style: double;
+  display: inline-block;
+  flex-direction: column;
+  width: 50%;
 
 }
+
 
 .image {
   border-style:dashed;
@@ -50,6 +54,13 @@ section {
 h1 {
   color: pink;
 }
+
+.panier {
+  color: aqua;
+
+}
+
+
 
 
 
