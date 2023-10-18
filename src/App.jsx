@@ -6,21 +6,17 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import CardList from './components/CardList'
-import Card from './components/card'
 import data from "./data/data.json"
 
 function App() {
-  //const [count, setCount] = useState(0)//
-
+ 
+const [count, setCount] = useState(0);
   
-
-
 
   return (
     <>
-      <NavBar/>
-      <CardList />
-     
+      <NavBar count={count}/>
+      <CardList count={count} setCount={setCount}/>
 
       <Footer/>
     </>

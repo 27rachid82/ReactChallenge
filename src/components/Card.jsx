@@ -5,15 +5,15 @@ import data from "../data/data.json"
 
 import CardList from "./CardList";
 
-function Card({item,count,setCount}) {
+function Card({item, count, setCount}) {
 
-    
-    const countAdd = () => setCount(count+1);
+
+   const countAdd = () => setCount(count+1);
 
 
     return (
     <>
-        <div class="big">
+        <div className="big">
             <article key={item.id} >
             <h2>{item.title}</h2>
             <p>{item.price}</p>
@@ -22,7 +22,6 @@ function Card({item,count,setCount}) {
             <p>{item.category}</p>
 
             <button onClick={countAdd}>Ajouter au panier</button>
-            <p>{count}</p>
 
             </article>
             

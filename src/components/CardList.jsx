@@ -6,16 +6,15 @@ import { useState } from "react";
 
 
 
-function CardList () {
-    const [count, setCount] = useState(0);
-    
+function CardList ({count, setCount}) {
+ 
 
     return(
        <> 
 <section>
         {data.map(item => (   
         
-        <Card item={item} count={count} setCount={setCount}/>     
+        <Card item={item}  count={count} setCount={setCount} />     
 
 ))}
 
